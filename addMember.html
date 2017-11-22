@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Add Member</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container">
+		<!-- Personal Information section -->
+
+			<h2>Personal Info</h2><hr>
+			<!-- surname -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="surname">Surname</label>
+				<input type="text" name="surname" id="surname"  class="form-control" placeholder="surname">
+			</div>
+
+			<!-- First and other names -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="faonames">Other Name(s)</label>
+				<input type="text" name="foanames" class="form-control" placeholder="First and Other names"  id="foanames">
+			</div>
+
+			<!-- Date of birth -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="birth">Date Of Birth</label>
+				<input type="date" name="birth" id="birth" class="form-control" placeholder="Date Of Birth">
+			</div>
+
+			<!-- Gender -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label>Gender</label><br> 
+				<label class="radio-inline">
+					<input type="radio" id="sexM" name="sex" value="Male"> Male
+				</label>
+				<label class="radio-inline">
+					<input type="radio" id="sexF" name="sex" value="Female"> Female
+				</label>
+				<br><br>					
+			</div>		
+
+			<!-- Email Address -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="email">Email Address</label>
+				<input type="email" name="email" id="email" placeholder="email (optional)"  class="form-control">
+			</div>		
+
+			<!-- phone number -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="contact">Phone Number</label>
+				<input type="text" name="contact" id="contact" placeholder="Phone number (optional)"  class="form-control">
+			</div>							
+
+			<!-- Residence -> house -->
+			<div class="col-md-12 col-xs-12" id="padding" >
+				<label for="residence">Residence</label>
+				<input type="text" name="residence" id="residence" placeholder="residence"  class="form-control">
+			</div>
+			
+			<!-- line breaker -->
+			<div class="col-md-12 col-xs-12" id="no-pad" >
+				<hr>
+			</div>	
+
+		<!-- Education section -->
+			<div class="col-md-12 col-xs-12" id="no-pad" >
+				<h2>Education</h2><hr>
+			</div>
+
+			<!-- school name -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="school">School</label>
+				<input type="text" name="school" id="school" class="form-control" placeholder="School">
+			</div>
+
+			<!-- level of educatio -> primary, jhs, shs -->
+			<div class="col-md-3 col-xs-3" id="padding">
+				<label for="edulevel">Level of Education</label><br>
+				<label class="radio-inline">
+					<input type="radio" name="level" value="Primary" id="levelP">Primary
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="level" value="JHS" id="levelJ">JHS
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="level" value="SHS" id="levelS">SHS
+				</label>
+				<br><br>
+			</div>
+
+			<!-- residence -> day or boarding -->
+			<div class="res">
+				<div class="col-md-3 col-xs-3" id="padding">
+					<label>Residence</label><br>
+					<label class="radio-inline">
+						<input type="radio" name="schoolres" value="Day" id="schoolday"> Day
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="schoolres" value="Boarding" id="schoolboard"> Boarding
+					</label>
+					<br><br>
+				</div>
+			</div>	
+		
+		<!-- shs details -->
+
+			<!-- visiting details -->
+			<div class="visit">					
+				<!-- visiting days -->
+				<div class="col-md-6 col-xs-6" id="padding">
+					<label>Visiting Day(s)</label>
+					<select class="form-control" id="visitDays">
+						<option value="" selected disabled style="display:none">choose your option</option>
+						<option value="fsun">First Sunday of every Month</option>
+						<option value="ssun">Second Sunday of every Month</option>
+						<option value="fsat">First Saturday of every Month</option>
+						<option value="ssat">Second Saturday of every Month</option>
+						<option value="flsun">First and Last Sunday of every Month</option>
+						<option value="flsat">First and Last Saturday of every Month</option>
+					</select>
+				</div>
+
+				<!-- time of vist -->
+				<div class="col-md-6 col-xs-6" id="padding">
+					<label for="time">Time</label>
+					<input type="time" name="time" id="time" placeholder="time" class="form-control" required>
+				</div>
+			</div>
+
+			<!-- line breaker -->
+			<div class="col-md-12 col-xs-12" id="no-pad" >
+				<hr>
+			</div>
+
+		<!-- JY Details section -->
+			<div class="col-md-12 col-xs-12" id="no-pad" >
+				<h2>JY Details</h2><hr>
+			</div>
+			
+			<!-- date of graduation -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="gradaution">Date Of Graduation</label>
+				<input type="date" name="graduation" id="graduation" class="form-control" placeholder="Date of Graduation">
+			</div>
+
+			<!-- bible study group -->
+			<div class="col-md-6 col-xs-6" id="padding">
+				<label for="biblestudy">Bible Study Group</label>
+				<select class="form-control" id="studyGroup">
+					<option value="" disabled selected style="display:none;">choose your option</option>
+					<option value="esther">Esther</option>
+					<option value="peter">Peter</option>
+					<option value="john">John</option>
+					<option value="ipsun">Ipsum</option>
+					<option value="lorem">Lorem</option>
+				</select>
+			</div>
+
+			<!-- jy group -->
+			<div class="col-md-12 col-xs-12" id="padding">
+				<label for="jygroup">JY Group</label>
+				<select class="form-control" id="jygroup">
+					<option value="" disabled selected style="display:none;">choose your option</option>
+					<option value="esther">Esther</option>
+					<option value="peter">Peter</option>
+					<option value="john">John</option>
+					<option value="ipsum">Ipsum</option>
+					<option value="lorem">Lorem</option>
+				</select>
+			</div>	
+
+		<!-- Add Member Button -->
+			<div class="col-md-12 col-xs-12" id="padding">
+				<button type="submit" class="btn btn-primary btn-block" id="butt">Add</button>
+			</div>				
+					
+		</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/member.js"></script> 
+	</body>
+</html>
